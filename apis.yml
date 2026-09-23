@@ -1,23 +1,59 @@
 aid: lynk
+
 name: Lynk Global
-description: 'Lynk Global is a company surfaced via the API Evangelist harvest backlog (source: space)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.sanity.io/images/h8fe13zm/production/e0153aef9b26ddcf69da8993a9f54fb193e4651b-1200x630.jpg
+
+description: 'Lynk Global, now operating as Elveo, provides direct‑to‑device satellite connectivity, enabling mobile phones, IoT devices and machines to stay connected worldwide without terrestrial infrastructure. The company leverages S‑band spectrum and a network of satellites to deliver reliable, low‑latency service across 60+ countries, supporting enterprises, automotive, consumer and government use cases.'
+
 url: https://raw.githubusercontent.com/api-evangelist/lynk/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:space
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-23'
+
 modified: '2026-09-23'
+
 tags:
 - Company
-apis: []
+- Satellite
+- Connectivity
+- IoT
+- Global
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/lynk-hosts.yml
+- type: Vendors
+  url: vendors/lynk-vendors.yml
+- type: DomainSecurity
+  url: security/lynk-domain-security.yml
 - type: Website
-  url: https://lynk.world/
+  url: https://www.elveo.com/
+- type: PrivacyPolicy
+  url: https://www.elveo.com/legal/privacy-policy
+- type: TermsOfService
+  url: https://www.elveo.com/legal/terms
+- type: News
+  url: https://www.elveo.com/news
+
+apis: []
+x-enrichment:
+  date: '2026-09-23'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
